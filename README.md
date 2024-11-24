@@ -58,4 +58,5 @@ Result
 
 ## Thanks
 - [Vee Satayamas](https://github.com/veer66) for the Thai word segmentation library.
+- (https://github.com/tlefsad/elasticsearch-analysis-thaichub2) Thank you for this code snippet from the elasticsearch-analysis-thaichub2 repository.
  
