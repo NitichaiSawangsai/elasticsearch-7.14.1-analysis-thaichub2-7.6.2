@@ -41,3 +41,5 @@ target/
 .env
 *.iml
 .idea
+
+node_modules

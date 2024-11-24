@@ -1,0 +1,17 @@
+{
+  "name": "elasticsearch-7.14.1-analysis-thaichub2-7.6.2",
+  "version": "7.14.1",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=16.20 <17",
+    "yarn": ">=1.22.0 <2"
+  },
+  "scripts": {
+    "export": "mvn clean package && cp -r ./target/releases/ ./export",
+    "test": "mvn test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
