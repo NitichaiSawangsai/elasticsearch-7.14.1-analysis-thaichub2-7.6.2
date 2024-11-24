@@ -1,6 +1,6 @@
 {
   "name": "elasticsearch-7.14.1-analysis-thaichub2-7.6.2",
-  "author": "Nitichai Sawangsai",
+  "author": "tlefsad,NitichaiSawangsai",
   "version": "7.14.1",
   "engineStrict": true,
   "engines": {
