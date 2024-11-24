@@ -16,8 +16,6 @@ services:
       - 9300:9300
     volumes:
       - elasticsearch-volume:/usr/share/elasticsearch/data
-      - .:/elasticsearch-analysis-thaichub2
-    command: sh -c './bin/elasticsearch-plugin install --batch file:///elasticsearch-analysis-thaichub2/target/releases/analysis-thaichub2-7.14.1.zip && exec /usr/local/bin/docker-entrypoint.sh elasticsearch'
     # deploy:
     #   resources:
     #     limits:

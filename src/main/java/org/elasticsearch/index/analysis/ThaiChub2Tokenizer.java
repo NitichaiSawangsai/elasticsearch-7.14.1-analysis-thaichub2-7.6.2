@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import java.util.ArrayList;
+
 
 public class ThaiChub2Tokenizer extends Tokenizer{
 
@@ -47,6 +49,7 @@ public class ThaiChub2Tokenizer extends Tokenizer{
 
     @Override
     public final boolean incrementToken() throws IOException {
+        List<String> listAA = new ArrayList<>();
         while (pending.size() == 0) {
             tokenize();
             if (pending.size() == 0) {
@@ -65,11 +68,15 @@ public class ThaiChub2Tokenizer extends Tokenizer{
                 termAtt.copyBuffer(word.toCharArray(), 0, length);
                 final int start = inputText.indexOf(word, offset);
                 offsetAtt.setOffset(correctOffset(start), offset = correctOffset(start + length));
+                System.out.println("+++ => inputText:  " + inputText +" => ANS:  " + termAtt);
                 return true;
             }
         }
+
         return false;
     }
+
+
 
     private boolean accept(String word) {
         for (int i = 0; i < word.length(); i++) {

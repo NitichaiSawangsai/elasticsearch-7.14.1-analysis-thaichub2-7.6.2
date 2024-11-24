@@ -30,10 +30,10 @@ public class ThaiChub2TokenizerTest {
             tokenizer.reset();
 
             boolean hasnext = tokenizer.incrementToken();
+
             while (hasnext) {
                 CharTermAttribute ta = tokenizer.getAttribute(CharTermAttribute.class);
                 list.add(ta.toString());
-                System.out.println(ta.toString());
                 hasnext = tokenizer.incrementToken();
             }
             results.add(String.join(",", list));
