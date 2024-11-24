@@ -4,15 +4,22 @@ The Thaichub2 (thai-chub-chub) Analysis Plugin integrates the Thai word segmenta
 
 ## Installation on Elasticsearch
 
-- Download a release zip from the [release page](https://github.com/tlefsad/elasticsearch-analysis-thaichub2/releases) matching your ES version (Now supports only version 7.14.1).
+- Download a release zip from the [release page](https://github.com/NitichaiSawangsai/elasticsearch-7.14.1-analysis-thaichub2-7.6.2/releases) matching your ES version (Now supports only version 7.14.1).
 
 - Install with this command
-
 ```sh
 ./bin/elasticsearch-plugin install --batch file:///<path to zip>
 ```
 
-- Restart Elasticsearch
+# run local
+
+```sh
+$ yarn 
+$ yarn export
+$ docker compose up
+```
+
+
 
 ## Sample Usage
 

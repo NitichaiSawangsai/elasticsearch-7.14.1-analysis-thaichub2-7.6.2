@@ -17,6 +17,14 @@
  * under the License.
  */
 
+/*
 grant {
     permission java.security.AllPermission "*";
 };
+*/
+
+grant {
+    permission java.io.FilePermission "${elasticsearch.home}/plugins/*", "read,write,execute";
+    permission java.net.SocketPermission "*", "connect,accept,resolve";
+};
+
