@@ -1,6 +1,7 @@
 {
   "name": "elasticsearch-7.14.1-analysis-thaichub2-7.6.2",
   "author": "tlefsad,NitichaiSawangsai",
+  "license": "UNLICENSED",
   "version": "7.14.1",
   "engineStrict": true,
   "engines": {
