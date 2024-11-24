@@ -15,9 +15,9 @@ public class ThaiChub2TokenizerTest {
 
     @Test
     public void TestTokenizer() throws IOException {
-        String[] input = {"คลิปดำ","คลิปขาว"};
+        String[] input = {"คลิปดำ","คลิปขาว","คูลพลัส","ทรีโอ้บล็อก"};
 
-        List<String> expected = Arrays.asList("คลิป,ดำ", "คลิป,ขาว");
+        List<String> expected = Arrays.asList("คลิป,ดำ", "คลิป,ขาว","คูล,พลัส","ทรี,โอ้,บล็อก");
 
         List<String> results = new ArrayList<>();
 

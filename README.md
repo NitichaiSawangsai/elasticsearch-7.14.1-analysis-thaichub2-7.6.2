@@ -11,9 +11,16 @@ The Thaichub2 (thai-chub-chub) Analysis Plugin integrates the Thai word segmenta
 ./bin/elasticsearch-plugin install --batch file:///<path to zip>
 ```
 
+
 # run local
 
 ```sh
+$ brew install openjdk@13
+$ export JAVA_HOME=$(/opt/homebrew/opt/openjdk@13/libexec/openjdk.jdk/Contents/Home)
+  export PATH=$JAVA_HOME/bin:$PATH
+
+
+
 $ yarn 
 $ yarn export
 $ docker compose up

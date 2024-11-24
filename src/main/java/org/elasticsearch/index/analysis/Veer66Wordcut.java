@@ -13,6 +13,7 @@ public class Veer66Wordcut {
     static {
         try {
             wordcut = Wordcut.fromDixUrl(url);
+            System.out.println("Wordcut initialized: " + wordcut);
         } catch (IOException e) {
             e.printStackTrace();
         }
