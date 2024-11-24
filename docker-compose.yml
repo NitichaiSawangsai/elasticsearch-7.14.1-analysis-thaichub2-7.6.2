@@ -25,15 +25,15 @@ services:
     #       cpus: '0.25'
     #       memory: 17M
     
-  # kibana:
-  #   image: docker.elastic.co/kibana/kibana:7.14.1
-  #   container_name: kibana
-  #   depends_on:
-  #     - elasticsearch
-  #   ports:
-  #     - 5601:5601
-  #   links:
-  #     - elasticsearch:elasticsearch
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.14.1
+    container_name: kibana
+    depends_on:
+      - elasticsearch
+    ports:
+      - 5601:5601
+    links:
+      - elasticsearch:elasticsearch
 
 networks:
   me_network:
